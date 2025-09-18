@@ -1,0 +1,166 @@
+/* Body */
+body {
+  font-family: "Varela Round", sans-serif;
+  background: #FFFBE7;
+  color: #5A3726;
+  padding: 12px;   
+  font-size: 16px; /* slightly larger than before */
+}
+
+/* This targets an HTML element <results>, not an element with id="results". */
+/* In your HTML, results is an id, so you need to use #: */
+#results {
+  margin-top: 20px;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+/* Section container */
+section.location-section {
+  background: #F7EBC6;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Tables */
+.fish-table {
+  table-layout: fixed; /* uniform column widths */
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.fish-table th,
+.fish-table td {
+  padding: 6px 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Column widths */
+    /* Icon */
+    .fish-table th:nth-child(1),
+    .fish-table td:nth-child(1) {
+        width: 5%;
+        text-align: center;
+    }
+    /* Name */
+    .fish-table th:nth-child(2),
+    .fish-table td:nth-child(2) {
+        width: 20%;
+    }
+    .fish-table th:nth-child(3),
+    .fish-table td:nth-child(3) {
+        width: 5%;
+    }
+    .fish-table th:nth-child(4),
+    .fish-table td:nth-child(4) {
+        width: 5%;
+    }
+    .fish-table th:nth-child(5),
+    .fish-table td:nth-child(5) {
+        width: 5%;
+    }
+    .fish-table th:nth-child(6),
+    .fish-table td:nth-child(6) {
+        width: 5%;
+    }
+    .fish-table th:nth-child(7),
+    .fish-table td:nth-child(7) {
+        width: 5%;
+    }
+    .fish-table th:nth-child(8),
+    .fish-table td:nth-child(8) {
+        width: 5%;
+    }
+    .fish-table th:nth-child(9),
+    .fish-table td:nth-child(9) {
+        width: 5%;
+    }
+    /* Time */
+    .fish-table th:nth-child(10),
+    .fish-table td:nth-child(10) {
+        width: 20%;
+    }
+    /* Spawn Chance */
+    .fish-table th:nth-child(11),
+    .fish-table td:nth-child(11) {
+        width: 20%;
+    } 
+
+/* Table header background */
+.fish-table th {
+  background: #F2DCAD;
+}
+
+/* tr:nth-child(even) */
+.fish-table tr td {
+  background: #FFFBE7;
+}
+
+/* Buttons */
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background: #4285f4;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button:hover {
+  background: #3367d6;
+}
+
+/* Controls */
+.controls {
+  margin-top: 6px;
+}
+
+.controls-result {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+#map {
+  display: block;
+  margin: 18px auto 12px auto; /* center and give bottom spacing */
+  /* max-width: 1000px;         adjust size as needed */
+  /* height: auto;             keep aspect ratio */
+}
+/* Results grid */
+#results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 tables per row */
+  gap: 16px; /* space between tables */
+}
+
+.fish-icon {
+    width: auto; /* or whatever size you want */
+    height: 32px;
+    vertical-align: middle;
+    /* margin-right: 6px; space between icon and text */
+}
+
+
+/* Mobile responsiveness: single table per row */
+@media (max-width: 800px) {
+  #results {
+    grid-template-columns: 1fr;
+  }
+}
