@@ -17,11 +17,11 @@ const size_order = {
 };
 
 const tool_power = {
-    copper: 1,
-    silver: 3,
-    gold: 5,
-    orihalcum: 7,
-    mithril: 9
+    base: 1,
+    copperPlus: 3,
+    silverPlus: 5,
+    goldPlus: 7,
+    ultimate: 9
 }
 
 function escapeHtml(str) {
