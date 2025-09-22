@@ -40,7 +40,7 @@ function escapeHtml(str) {
 
 // Load fish data from JSON file
 async function loadFishData() {
-  const response = await fetch("fish_data2.json");
+  const response = await fetch("fish_data2.json?v=2");
   return response.json();
 }
 
