@@ -165,6 +165,14 @@ button:hover {
   #results {
     grid-template-columns: 1fr;
   }
+
+  body {
+    font-size: 24px; /* bump font size for easier reading */
+  }
+
+  .fish-table {
+    font-size: 24px;
+  }
 }
 
 .weather-options {
