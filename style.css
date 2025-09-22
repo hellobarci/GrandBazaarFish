@@ -189,3 +189,9 @@ button:hover {
         border: 2px solid #000;
         border-radius: 6px;
     }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* optional: removes inline spacing */
+}
