@@ -9,46 +9,62 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Story of Seasons: Grand Bazaar Fish Database</h1>
+    <h1>Story of Seasons: Grand Bazaar Fish Database</h1>
 
-  <label>
-    Tool Level:
-    <select id="toollevel">
-      <option>base</option>
-      <option>copperPlus</option>
-      <option>silverPlus</option>
-      <option>goldPlus</option>
-      <option>ultimate</option>
-    </select>
-  </label>
+    <label>
+        Tool Level:
+        <select id="toollevel">
+            <option>base</option>
+            <option>copperPlus</option>
+            <option>silverPlus</option>
+            <option>goldPlus</option>
+            <option>ultimate</option>
+        </select>
+    </label>
 
-  <label>
-    Season:
-    <select id="season">
-      <option>spring</option>
-      <option>summer</option>
-      <option>autumn</option>
-      <option>winter</option>
-    </select>
-  </label>
+    <label>
+        Season:
+        <select id="season">
+            <option>spring</option>
+            <option>summer</option>
+            <option>autumn</option>
+            <option>winter</option>
+        </select>
+    </label>
+    <!--
+        <label>
+            Weather:
+            <select id="weather">
+                <option>sunny</option>
+                <option>cloudy</option>
+                <option>rain</option>
+                <option>heavyrain</option>
+                <option>hurricane</option>
+                <option>snow</option>
+                <option>blizzard</option>
+            </select>
+        </label>
+        -->
+    <br />
+    <label>
+        Weather:
+    </label>
 
-  <label>
-    Weather:
-    <select id="weather">
-      <option>sunny</option>
-      <option>cloudy</option>
-      <option>rain</option>
-      <option>heavyRain</option>
-      <option>hurricane</option>
-      <option>snow</option>
-      <option>blizzard</option>
-    </select>
-  </label>
+    <div id="weather-select" class="weather-options">
+        <img src="icons/weather_sunny.png" alt="Sunny" data-weather="sunny" class="weather-icon">
+        <img src="icons/weather_cloudy.png" alt="Cloudy" data-weather="cloudy" class="weather-icon">
+        <img src="icons/weather_rain.png" alt="Rain" data-weather="rain" class="weather-icon">
+        <img src="icons/weather_heavyrain.png" alt="Heavy Rain" data-weather="heavyrain" class="weather-icon">
+        <img src="icons/weather_hurricane.png" alt="Hurricane" data-weather="hurricane" class="weather-icon">
+        <img src="icons/weather_snow.png" alt="Snow" data-weather="snow" class="weather-icon">
+        <img src="icons/weather_blizzard.png" alt="Blizzard" data-weather="blizzard" class="weather-icon">
+    </div>
+    
 
-  <div id="results"></div>
+    <div id="results"></div>
 
-  <img src="fishing_map.png" id="map">
+    <img src="fishing_map.png" id="map">
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+    </html>
