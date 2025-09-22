@@ -161,7 +161,7 @@ button:hover {
 
 
 /* Mobile responsiveness: single table per row */
-@media (max-width: 800px) {
+@media (orientation: portrait) {
   #results {
     grid-template-columns: 1fr;
   }
