@@ -18,10 +18,10 @@ const SIZE_ORDER = {
 };
 
 const TOOL_POWER = {
-  base: 1,
-  copperPlus: 3,
-  silverPlus: 5,
-  goldPlus: 7,
+  base: 2,
+  copper: 3,
+  silver: 5,
+  gold: 7,
   orihalcum: 9,
 };
 
