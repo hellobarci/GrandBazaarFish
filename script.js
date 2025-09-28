@@ -22,7 +22,7 @@ const TOOL_POWER = {
   copperPlus: 3,
   silverPlus: 5,
   goldPlus: 7,
-  ultimate: 9,
+  orihalcum: 9,
 };
 
 // Global variable for selected weather
